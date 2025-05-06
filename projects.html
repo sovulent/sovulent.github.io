@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <title>Projects | Kristopher Ray | Cybersecurity Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
   <header class="site-header">
-    <h1><a href="/">Kristopher Ray | Cybersecurity Portfolio</a></h1>
-    <nav class="site-nav">
-      
+    <div class="topbar">
+      <h1><a href="/">Kristopher Ray | Cybersecurity Portfolio</a></h1>
+      <nav>
         
-          <a href="/about.html">About</a>
+          
+            <a href="/about.html">About</a>
+          
         
-      
+          
+            <a href="/">Home</a>
+          
         
-          <a href="/">Home</a>
+          
+            <a href="/projects.html">Projects</a>
+          
         
-      
-        
-          <a href="/projects.html">Projects</a>
-        
-      
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -33,6 +34,24 @@
 <p>Here’s a sample of what I’ve been working on:</p>
 
 <div class="projects">
+  
+    <div class="project-card">
+      <h3>Custom Firewall Ruleset</h3>
+      <p>Designed iptables rules for hardened Linux servers.</p>
+      <p><em>Status: Testing</em></p>
+    </div>
+  
+    <div class="project-card">
+      <h3>Packet Sniffer (Python)</h3>
+      <p>A lightweight script to monitor and log local network traffic.</p>
+      <p><em>Status: In Progress</em></p>
+    </div>
+  
+    <div class="project-card">
+      <h3>Vulnerability Assessment Lab</h3>
+      <p>Used Kali Linux, Metasploit, and OWASP ZAP for assessment.</p>
+      <p><em>Status: Completed</em></p>
+    </div>
   
 </div>
 
@@ -44,10 +63,7 @@
 
   <div id="settings-button" onclick="toggleSettings()">⚙️</div>
   <div id="settings-panel">
-    <label>
-      <input type="checkbox" id="darkModeSwitch" />
-      Dark Mode
-    </label>
+    <label><input type="checkbox" id="darkModeSwitch" /> Dark Mode</label>
   </div>
 
   <script src="/assets/theme.js"></script>

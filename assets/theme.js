@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") document.body.classList.add("dark");
+  const saved = localStorage.getItem("theme");
+  if (saved === "dark") document.body.classList.add("dark");
 
   const toggle = document.getElementById("darkModeSwitch");
   if (toggle) {
