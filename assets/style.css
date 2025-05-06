@@ -23,12 +23,12 @@ body {
 }
 
 main {
-  max-width: 960px;
-  margin: 2rem auto;
+  max-width: 900px;
+  margin: 1.5rem auto;
   background: var(--card-bg);
-  padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
 
 header {
@@ -73,12 +73,9 @@ footer {
 }
 
 .project-card {
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: var(--card-bg);
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
 }
 
 .project-card:hover {
