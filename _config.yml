@@ -1,0 +1,10 @@
+title: Kristopher Ray | Cybersecurity Portfolio
+description: The personal cybersecurity portfolio of Kristopher Ray, student at ECPI University.
+baseurl: "" 
+url: "https://sovulent.github.io"
+theme: null
+markdown: kramdown
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
