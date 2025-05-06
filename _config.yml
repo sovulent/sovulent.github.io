@@ -1,12 +1,1 @@
-title: Kristopher Ray | Cybersecurity Portfolio
-description: Portfolio of Kristopher Ray, Cybersecurity Student at ECPI University
-baseurl: ""
-url: ""
-markdown: kramdown
-collections:
-  projects:
-    output: true
-header_pages:
-  - index.md
-  - about.md
-  - projects.md
+theme: null
