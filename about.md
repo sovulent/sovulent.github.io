@@ -13,6 +13,6 @@ I’m constantly learning through projects, home labs, and certification prep.
 
 ### Goals
 
-- Master penetration testing techniques
-- Get CompTIA Security+ certified
+- Master penetration testing techniques  
+- Get CompTIA Security+ certified  
 - Build open-source security tools
