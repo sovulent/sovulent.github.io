@@ -22,18 +22,23 @@ body {
   padding: 0;
 }
 
-.topbar {
+.site-header {
+  padding: 1rem 1rem 0;
+}
+
+.site-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.topbar h1 {
+.site-top h1 {
   margin: 0;
   font-size: 1.5rem;
   color: var(--link);
+  flex-grow: 1;
 }
 
 #theme-toggle {
@@ -44,7 +49,14 @@ body {
   color: var(--link);
 }
 
-nav {
+.site-nav {
   text-align: center;
-  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.site-nav a {
+  color: var(--link);
+  text-decoration: none;
+  margin: 0 0.75rem;
+  font-weight: 600;
 }
