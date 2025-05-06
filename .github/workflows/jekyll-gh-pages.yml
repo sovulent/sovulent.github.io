@@ -1,21 +1,25 @@
-name: Build and Deploy Jekyll Site
+name: Build and Deploy Jekyll Site to gh-pages
 
 on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
-  github-pages:
+  jekyll:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           gem install bundler
           bundle init
@@ -23,11 +27,12 @@ jobs:
           echo 'gem "webrick"' >> Gemfile
           bundle install
 
-      - name: Build site
+      - name: Build Site
         run: bundle exec jekyll build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to gh-pages Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./_site
