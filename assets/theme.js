@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("theme-toggle");
-  const saved = localStorage.getItem("theme");
-  if (saved === "dark") document.body.classList.add("dark");
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") document.body.classList.add("dark");
 
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    const active = document.body.classList.contains("dark");
-    localStorage.setItem("theme", active ? "dark" : "light");
-  });
+  const toggle = document.getElementById("darkModeSwitch");
+  if (toggle) {
+    toggle.checked = document.body.classList.contains("dark");
+    toggle.addEventListener("change", function () {
+      document.body.classList.toggle("dark");
+      localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+    });
+  }
 });
+
+function toggleSettings() {
+  const panel = document.getElementById("settings-panel");
+  panel.style.display = panel.style.display === "block" ? "none" : "block";
+}

@@ -24,34 +24,17 @@ body {
 
 .site-header {
   padding: 1rem 1rem 0;
+  text-align: center;
 }
 
-.site-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.site-top h1 {
+.site-header h1 {
   margin: 0;
-  font-size: 1.5rem;
-  color: var(--link);
-  flex-grow: 1;
-}
-
-#theme-toggle {
-  font-size: 1.2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
+  font-size: 2rem;
   color: var(--link);
 }
 
 .site-nav {
-  text-align: center;
-  margin-top: 0.5rem;
+  margin: 1rem 0;
 }
 
 .site-nav a {
@@ -59,4 +42,51 @@ body {
   text-decoration: none;
   margin: 0 0.75rem;
   font-weight: 600;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+#settings-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--card-bg);
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#settings-panel {
+  display: none;
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  background: var(--card-bg);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+  color: var(--fg);
 }

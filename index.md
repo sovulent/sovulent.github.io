@@ -5,4 +5,4 @@ title: Home
 
 # Welcome
 
-Toggle the theme using the switch above.
+Toggle dark mode from the ⚙️ settings button in the bottom right.
