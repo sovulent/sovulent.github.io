@@ -10,20 +10,26 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - name: Checkout Repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Vite Site
+      - name: Build Vite app
         run: npm run build
+
+      - name: List built files
+        run: |
+          echo "Listing dist folder..."
+          ls -l dist || echo "❌ dist folder not found!"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
