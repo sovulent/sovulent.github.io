@@ -3,15 +3,12 @@ layout: default
 title: About
 ---
 
-## About Me
+# About Me
 
-Hi! I’m Kristopher Ray, currently studying Cybersecurity at **ECPI University**. My interests include ethical hacking, vulnerability research, and building secure systems.
+Hi! I’m Kristopher Ray, currently studying Cybersecurity at **ECPI University**.  
+My interests include ethical hacking, vulnerability research, and building secure systems.
 
-I’m constantly learning through projects, home labs, and certification prep.
-
----
-
-### Goals
+## Goals
 
 - Master penetration testing techniques  
 - Get CompTIA Security+ certified  

@@ -5,7 +5,7 @@ title: Projects
 
 # 💻 Projects
 
-Here's a sample of what I’ve been working on:
+Here’s a sample of what I’ve been working on:
 
 <div class="projects">
   {% for project in site.projects %}

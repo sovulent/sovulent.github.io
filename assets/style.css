@@ -15,15 +15,21 @@ body.dark {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
   background: var(--bg);
   color: var(--fg);
   margin: 0;
 }
 
-.topbar {
-  text-align: center;
-  padding: 1rem;
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+header h1 a {
+  color: var(--link);
+  text-decoration: none;
 }
 
 nav {
@@ -32,39 +38,29 @@ nav {
 
 nav a {
   color: var(--link);
+  margin-right: 1rem;
   text-decoration: none;
-  margin: 0 1rem;
-}
-
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: var(--card-bg);
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  font-weight: bold;
 }
 
 footer {
   text-align: center;
-  padding: 2rem;
   font-size: 0.9rem;
   color: var(--muted);
+  margin-top: 2rem;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .project-card {
   background: var(--card-bg);
-  padding: 1rem 1.25rem;
+  padding: 1rem;
   border-radius: 10px;
   border: 1px solid #ccc;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .project-card h3 {

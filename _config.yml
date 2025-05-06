@@ -1,7 +1,8 @@
 title: Kristopher Ray | Cybersecurity Portfolio
-description: Cleaned and restored Jekyll site with dark mode and project cards
+description: Portfolio of Kristopher Ray, Cybersecurity Student at ECPI University
 baseurl: ""
 url: ""
+markdown: kramdown
 collections:
   projects:
     output: true

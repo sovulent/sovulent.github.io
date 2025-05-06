@@ -5,4 +5,5 @@ title: Home
 
 # Welcome
 
-This is the restored version of your portfolio. Dark mode toggle is under ⚙️ at bottom right.
+I'm Kristopher Ray, a cybersecurity student at ECPI University.  
+Explore my projects and feel free to connect.
