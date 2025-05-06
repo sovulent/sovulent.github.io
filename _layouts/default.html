@@ -8,14 +8,17 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
+  <script src="{{ '/assets/theme.js' | relative_url }}"></script>
+
   <header>
     <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     <nav>
       {% for page in site.pages %}
         {% if page.title %}
-        <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
         {% endif %}
       {% endfor %}
+      <span class="toggle-button" onclick="toggleTheme()">🌓 Toggle Theme</span>
     </nav>
   </header>
 
