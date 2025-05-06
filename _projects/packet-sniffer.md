@@ -1,5 +1,5 @@
 ---
-title: Packet Sniffer
-description: A lightweight Python tool to monitor and analyze local network traffic.
-status: In Progress
+title: "Packet Sniffer (Python)"
+description: "A lightweight script to monitor and log local network traffic."
+status: "In Progress"
 ---

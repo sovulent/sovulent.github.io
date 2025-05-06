@@ -1,5 +1,5 @@
 ---
-title: Custom Firewall Ruleset
-description: Securing Ubuntu servers with custom iptables configurations.
-status: Testing
+title: "Custom Firewall Ruleset"
+description: "Designed iptables rules for hardened Linux servers."
+status: "Testing"
 ---
