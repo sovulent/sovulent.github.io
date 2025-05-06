@@ -1,15 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("theme-toggle");
+  const toggle = document.getElementById("theme-toggle");
+  const saved = localStorage.getItem("theme");
+  if (saved === "dark") document.body.classList.add("dark");
 
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-  }
-
-  if (toggleBtn) {
-    toggleBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      const isDark = document.body.classList.contains("dark");
-      localStorage.setItem("theme", isDark ? "dark" : "light");
-    });
-  }
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    const active = document.body.classList.contains("dark");
+    localStorage.setItem("theme", active ? "dark" : "light");
+  });
 });
