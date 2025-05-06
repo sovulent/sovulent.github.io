@@ -1,7 +1,7 @@
 :root {
-  --bg: #f3f4f6;
+  --bg: #f9fafb;
   --fg: #1f2937;
-  --card-bg: #fff;
+  --card-bg: #ffffff;
   --link: #4b0082;
   --muted: #6b7280;
 }
@@ -15,48 +15,65 @@ body.dark {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: sans-serif;
   background: var(--bg);
   color: var(--fg);
   margin: 0;
-  padding: 0;
 }
 
-.site-header {
-  padding: 1rem 1rem 0;
+.topbar {
   text-align: center;
+  padding: 1rem;
 }
 
-.site-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: var(--link);
+nav {
+  margin-top: 1rem;
 }
 
-.site-nav {
-  margin: 1rem 0;
-}
-
-.site-nav a {
+nav a {
   color: var(--link);
   text-decoration: none;
-  margin: 0 0.75rem;
-  font-weight: 600;
+  margin: 0 1rem;
 }
 
 main {
-  max-width: 960px;
+  max-width: 800px;
   margin: 2rem auto;
+  padding: 1.5rem;
   background: var(--card-bg);
-  padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
 
 footer {
   text-align: center;
-  padding: 2rem 0 1rem;
+  padding: 2rem;
   font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--fg);
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
   color: var(--muted);
 }
 
@@ -73,7 +90,6 @@ footer {
   text-align: center;
   line-height: 44px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   z-index: 1000;
 }
 
@@ -86,7 +102,6 @@ footer {
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   z-index: 999;
   color: var(--fg);
 }

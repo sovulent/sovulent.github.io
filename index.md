@@ -5,4 +5,4 @@ title: Home
 
 # Welcome
 
-Toggle dark mode from the ⚙️ settings button in the bottom right.
+This is the restored version of your portfolio. Dark mode toggle is under ⚙️ at bottom right.

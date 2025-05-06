@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <nav class="site-nav">
-      {% for page in site.pages %}
-        {% if page.title %}
-          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+    <div class="topbar">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <nav>
+        {% for page in site.pages %}
+          {% if page.title %}
+            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -29,10 +30,7 @@
 
   <div id="settings-button" onclick="toggleSettings()">⚙️</div>
   <div id="settings-panel">
-    <label>
-      <input type="checkbox" id="darkModeSwitch" />
-      Dark Mode
-    </label>
+    <label><input type="checkbox" id="darkModeSwitch" /> Dark Mode</label>
   </div>
 
   <script src="{{ '/assets/theme.js' | relative_url }}"></script>

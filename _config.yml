@@ -1,3 +1,11 @@
 title: Kristopher Ray | Cybersecurity Portfolio
+description: Cleaned and restored Jekyll site with dark mode and project cards
 baseurl: ""
 url: ""
+collections:
+  projects:
+    output: true
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
